@@ -1,0 +1,226 @@
+/* =========================
+   GLOBAL LAYOUT
+========================= */
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #121214;
+}
+
+.d-md-flex {
+  width: 100%;
+  min-height: 100vh;
+}
+
+main.flex-grow-1 {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 100%;
+}
+
+.card-custom {
+  width: 100%;
+  overflow: hidden;
+  background-color: #1a1a1e;
+  border: 1px solid #29292e;
+  border-radius: 12px;
+}
+
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #121214;
+}
+
+.topbar .dropdown {
+  flex-shrink: 0;
+}
+
+.topbar .dropdown-toggle {
+  width: 40px;
+  height: 40px;
+}
+
+.dropdown-toggle.no-arrow::after {
+  display: none !important;
+}
+
+.dropdown-item:hover {
+  background-color: #f4f4f5;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-control-custom {
+  background-color: #161c2e !important;
+  border: 1px solid #1f2942 !important;
+  color: #ffffff !important;
+  padding: 12px 15px;
+  border-radius: 8px;
+}
+
+.form-control-custom::placeholder {
+  color: #566487;
+}
+
+.form-control-custom:focus {
+  box-shadow: 0 0 0 0.25rem rgba(124, 77, 255, 0.25);
+  border-color: #7c4dff !important;
+}
+
+.form-select.form-control-custom {
+  color: #ffffff !important;
+}
+
+/* =========================
+   STATUS SELECT
+========================= */
+
+.select-table-custom {
+  background-color: #161c2e !important;
+  border: 1px solid #293552 !important;
+  color: #ffffff !important;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  min-width: 140px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn-purple {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.btn-purple:hover {
+  background-color: #6366f1;
+  color: white;
+}
+
+.text-danger-custom {
+  color: #ef4444;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.text-danger-custom:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-custom {
+  color: #e1e1e6 !important;
+  min-width: 850px;
+}
+
+.table-custom th {
+  color: #6e6e77 !important;
+  border-bottom: 1px solid #29292e !important;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.table-custom td {
+  border-bottom: 1px solid #1a1a1e !important;
+  padding: 12px 8px !important;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .container-fluid {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .p-4 {
+    padding: 1rem !important;
+  }
+
+  .card-custom {
+    padding: 15px !important;
+  }
+
+  .table-custom {
+    min-width: 800px;
+    font-size: 12px;
+  }
+
+  .btn-purple {
+    width: 100%;
+  }
+
+  .topbar h4 {
+    font-size: 1.1rem;
+  }
+
+  .select-table-custom {
+    min-width: 120px;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .card-custom {
+    padding: 20px !important;
+  }
+
+  .table-custom {
+    min-width: 850px;
+  }
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 992px) {
+  .table-custom {
+    min-width: 100%;
+  }
+}

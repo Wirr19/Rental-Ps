@@ -1,0 +1,233 @@
+/* =========================
+   GLOBAL
+========================= */
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121214;
+}
+
+/* =========================
+   CONTENT
+========================= */
+.flex-grow-1,
+.content-wrapper {
+  width: 100%;
+  min-width: 0;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* =========================
+   CARD
+========================= */
+.card-custom {
+  background-color: #1a1a1e;
+  border: 1px solid #29292e;
+  border-radius: 12px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* =========================
+   FORM
+========================= */
+.form-control-custom {
+  background-color: #161c2e !important;
+  border: 1px solid #1f2942 !important;
+  color: #ffffff !important;
+  padding: 12px 15px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.form-control-custom::placeholder {
+  color: #566487;
+}
+
+.form-control-custom:focus,
+.form-select:focus {
+  box-shadow: none !important;
+  border-color: #4f46e5 !important;
+}
+
+.form-select {
+  width: 100%;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn-purple {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.btn-purple:hover {
+  background-color: #6366f1;
+  color: white;
+}
+
+/* =========================
+   TABLE
+========================= */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-custom {
+  color: #e1e1e6 !important;
+  margin-bottom: 0;
+}
+
+.table-custom th {
+  color: #6e6e77 !important;
+  border-bottom: 1px solid #29292e !important;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.table-custom td {
+  border-bottom: 1px solid #1a1a1e !important;
+  padding: 12px 8px !important;
+  white-space: nowrap;
+}
+
+/* =========================
+   STATUS
+========================= */
+.badge-status-belum {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.badge-status-selesai {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+/* =========================
+   LINK AKSI
+========================= */
+.text-danger-custom {
+  color: #ef4444;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.text-danger-custom:hover {
+  text-decoration: underline;
+}
+
+.text-success-custom {
+  color: #10b981;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.text-success-custom:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   DROPDOWN
+========================= */
+.dropdown-toggle.no-arrow::after {
+  display: none !important;
+}
+
+.dropdown-item:hover {
+  background-color: #f4f4f5;
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 991.98px) {
+  .container-fluid {
+    padding: 15px !important;
+  }
+
+  .card-custom {
+    padding: 15px !important;
+  }
+
+  .btn-danger,
+  .btn-purple {
+    width: 100%;
+  }
+
+  .d-flex.justify-content-between.align-items-center.mb-3 {
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 10px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 12px !important;
+  }
+
+  .card-custom {
+    padding: 12px !important;
+  }
+
+  .table-custom {
+    font-size: 12px;
+  }
+
+  .table-custom th,
+  .table-custom td {
+    padding: 8px 6px !important;
+  }
+
+  .btn-danger,
+  .btn-purple {
+    width: 100%;
+  }
+
+  .badge-status-belum,
+  .badge-status-selesai {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  .text-danger-custom,
+  .text-success-custom {
+    display: block;
+    margin: 4px 0;
+  }
+}

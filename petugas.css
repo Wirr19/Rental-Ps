@@ -1,0 +1,166 @@
+body{
+    background: #0b0b12;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* CONTENT */
+    .content-area{
+        padding: 12px;
+    }
+
+/* HEADER */
+.petugas-topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.petugas-topbar h2{
+    font-size: 27px;
+    font-weight: 700;
+
+}
+
+
+.dropdown-toggle::after{
+    display: none !important;
+}
+
+/* CARD */
+.card-custom{
+    background: #14141f;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.card-title{
+    color: #6d6dff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* INPUT */
+.custom-input{
+    background: #161c2e !important;
+    border: 1px solid #1f2942 !important;
+    color: #ffffff !important;
+    height: 48px;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: .95rem;
+}
+
+.custom-input::placeholder{
+    color: #566487;
+}
+
+.custom-input:focus{
+    background: #161c2e !important;
+    color: #ffffff !important;
+    border-color: #7c4dff !important;
+    box-shadow: 0 0 0 .25rem rgba(124,77,255,.25);
+}
+
+/* BUTTON */
+.btn-save{
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: .2s;
+}
+
+.btn-save:hover{
+    background: #6366f1;
+    color: white;
+}
+
+.btn-delete{
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: .2s;
+}
+
+.btn-delete:hover{
+    background: #f87171;
+    color: white;
+}
+
+/* TABEL DARK STYLE */
+
+.petugas-table{
+    --bs-table-bg: #rgba(33, 37, 41);
+    --bs-table-color: #e4e4e7;
+}
+
+.petugas-table thead th{
+    background: rgba(33, 37, 41);
+    color: #7f8495;
+    border: none;
+}
+
+.petugas-table tbody td{
+    background: rgba(33, 37, 41);
+    color: #9ca3af;
+    border-color: #161b22;
+}
+
+/* TABLE
+.table{
+    color: #ffffff;
+    background-color: black;
+}
+
+.table thead{
+    background-color: #1a1a1e;
+}
+
+.table thead th{
+    border-color: #29292e;
+    color: #8d8d99;
+    font-size: .85rem;
+    text-transform: uppercase;
+}
+
+.table tbody td{
+    border-color: #1f1f2e;
+    vertical-align: middle;
+} */
+
+/* BADGE */
+.badge{
+    padding: 8px 12px;
+    font-size: .75rem;
+    border-radius: 8px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .content-area{
+        padding: 15px;
+    }
+
+    .card-custom{
+        padding: 20px;
+    }
+
+    .petugas-topbar h2{
+        font-size: 1.5rem;
+    }
+
+    .custom-input{
+        margin-bottom: 10px;
+    }
+}
